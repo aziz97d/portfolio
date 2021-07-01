@@ -120,7 +120,7 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
 
 
 
-// -------- Portfolio Swiper -------
+// -------- Testimonial Swiper -------
 
 let swiperTestimonial = new Swiper('.testimonial__container', {
     // Optional parameters
@@ -137,7 +137,7 @@ let swiperTestimonial = new Swiper('.testimonial__container', {
     },
     breakpoints: {
         568:{
-            slidesPreView: 2,
+            slidesPerView: 2,
         }
     }
   
