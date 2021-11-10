@@ -339,6 +339,20 @@ img {
   color: var(--title-color);
   font-weight: var(--font-medium);
   margin-right: var(--mb-0-25);
+
+  background-image: linear-gradient(to right, #000, var(--first-color));
+
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 300%;
+  animation: text-animation 3s linear infinite;
+}
+
+/* ---- Animate Home scroll ------ */
+@keyframes text-animation {
+  to {
+    background-position: -300%;
+  }
 }
 
 .home__scroll-arrow {
@@ -626,6 +640,9 @@ img {
   display: none;
 }
 
+.qualification__active {
+  color: var(--first-color);
+}
 .qualification__active[data-content] {
   display: block;
 }
